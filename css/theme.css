@@ -43,7 +43,7 @@ body {
 
 header {
   background-image: url('/img/banner-top.jpg');
-  background-position: 0% 40%;
+  background-position: 0% 15%;
   background-size: cover;
   height: 480px;
   position: relative;
@@ -84,20 +84,20 @@ nav {
 
 #title > h1 {
   font-family: 'Victorian Parlor Vintage';
-  font-size: 3rem;
-  margin: 8px 0;
+  font-size: 3.8rem;
+  margin: 12px 0 0 0;
 }
 
 #title > h2 {
   font-family: 'Rosewood';
-  font-size: 2.2rem;
-  margin: 4px 0;
+  font-size: 2.7rem;
+  margin: 8px 0 0 0;
 }
 
 nav > ul {
   float: right;
   list-style: none;
-  margin: 40px 16px 40px 0;
+  margin: 50px 16px 50px 0;
   vertical-align: middle;
 }
 
@@ -121,6 +121,53 @@ nav > ul > li > a {
   cursor: pointer;
   text-decoration: none;
   margin: 0 16px;
+}
+
+section {
+  padding: 32px;
+}
+
+section > h1 {
+  text-align: center;
+  font-family: 'Jesse James';
+  font-size: 1.6rem;
+  margin: 32px 0;
+}
+
+section > p {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#when {
+  background-color: #4f401c;
+  color: white;
+  height: 400px;
+  text-align: center;
+}
+
+#when > h1 {
+  font-family: 'Rosewood';
+  font-size: 2.4rem;
+  margin-bottom: 64px;
+}
+
+#coming_soon {
+  font-family: 'Victorian Parlor Vintage';
+  font-size: 4.4rem;
+  margin: 32px 0;
+  transform: rotate(-15deg);
+}
+
+#cant_wait {
+  font-family: 'Kirsty';
+  font-size: 1.5rem;
+  margin-left: 400px;
+}
+
+#cant_wait > a {
+  color: white;
 }
 
 @media only screen and (min-width: 720px) {
