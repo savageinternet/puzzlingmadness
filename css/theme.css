@@ -22,7 +22,7 @@
 body, html {
   color: #4f401c;
   margin: 0;
-  min-width: 320px;
+  min-width: 480px;
   padding: 0;
 }
 html {
@@ -80,11 +80,10 @@ nav {
 }
 
 #title > img {
-  height: 96px;
+  width: calc(100% - 16px);
 }
 
 nav > ul {
-  float: right;
   list-style: none;
   margin: 36px 0;
   padding: 0;
@@ -92,10 +91,9 @@ nav > ul {
 }
 
 nav > ul > li {
-  border-right: 1px solid #4f401c;
-  display: inline-block;
   font-family: 'Jesse James';
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  padding: 8px 0;
   transition: background-color 200ms;
 }
 
@@ -214,6 +212,11 @@ footer > ul > li > ul > li {
 }
 
 @media only screen and (min-width: 720px) {
+  #title > img {
+    height: 96px;
+    width: auto;
+  }
+
   #when {
     height: 400px;
   }
@@ -244,6 +247,18 @@ footer > ul > li > ul > li {
   }
 }
 @media only screen and (min-width: 1024px) {
+  nav > ul {
+    float: right;
+  }
+
+  nav > ul > li {
+    border-right: 1px solid #4f401c;
+    display: inline-block;
+    font-family: 'Jesse James';
+    font-size: 1.6rem;
+    transition: background-color 200ms;
+  }
+
   #coming_soon {
     font-size: 4.4rem;
   }
