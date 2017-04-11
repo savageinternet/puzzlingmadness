@@ -41,6 +41,88 @@ body {
   box-sizing: inherit;
 }
 
+header {
+  background-image: url('/img/banner-top.jpg');
+  background-position: 0% 40%;
+  background-size: cover;
+  height: 480px;
+  position: relative;
+}
+
+#banner {
+  padding: 32px 0 0 32px;
+}
+
+#logo {
+  background-image: url('/img/biglogo.png');
+  background-position: -33px -13px;
+  background-size: 132%;
+  border: 5px solid #4f401c;
+  border-radius: 108px;
+  display: inline-block;
+  height: 216px;
+  vertical-align:  middle;
+  width: 216px;
+  z-index: 2;
+}
+
+nav {
+  background-color: white;
+  border: 5px solid #4f401c;
+  border-radius: 16px;
+  display: inline-block;
+  margin-left: -48px;
+  padding: 8px 8px 8px 64px;
+  vertical-align: middle;
+  width: calc(100% - 240px);
+}
+
+#title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#title > h1 {
+  font-family: 'Victorian Parlor Vintage';
+  font-size: 3rem;
+  margin: 8px 0;
+}
+
+#title > h2 {
+  font-family: 'Rosewood';
+  font-size: 2.2rem;
+  margin: 4px 0;
+}
+
+nav > ul {
+  float: right;
+  list-style: none;
+  margin: 40px 16px 40px 0;
+  vertical-align: middle;
+}
+
+nav > ul > li {
+  border-right: 1px solid #4f401c;
+  display: inline-block;
+  font-family: 'Jesse James';
+  font-size: 2rem;
+  transition: background-color 200ms;
+}
+
+nav > ul > li:hover {
+  background-color: #eee;
+}
+
+nav > ul > li:last-child {
+  border-right: 0;
+}
+
+nav > ul > li > a {
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 16px;
+}
+
 @media only screen and (min-width: 720px) {
 
 }
