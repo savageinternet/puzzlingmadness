@@ -27,9 +27,10 @@
 }
 
 body, html {
-  padding: 0;
+  color: #4f401c;
   margin: 0;
   min-width: 320px;
+  padding: 0;
 }
 html {
   box-sizing: border-box;
@@ -46,7 +47,6 @@ header {
   background-position: 0% 15%;
   background-size: cover;
   height: 480px;
-  position: relative;
 }
 
 #banner {
@@ -110,7 +110,7 @@ nav > ul > li {
 }
 
 nav > ul > li:hover {
-  background-color: #eee;
+  background-color: rgba(79, 64, 28, 0.25);
 }
 
 nav > ul > li:last-child {
@@ -118,6 +118,7 @@ nav > ul > li:last-child {
 }
 
 nav > ul > li > a {
+  color: #4f401c;
   cursor: pointer;
   text-decoration: none;
   margin: 0 16px;
@@ -168,6 +169,14 @@ section > p {
 
 #cant_wait > a {
   color: white;
+}
+
+#banner_bottom {
+  background-image: url('/img/banner-bottom.jpg');
+  background-position: 0% 35%;
+  background-size: cover;
+  height: 320px;
+  position: relative;
 }
 
 @media only screen and (min-width: 720px) {
