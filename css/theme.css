@@ -24,6 +24,7 @@ body, html {
   margin: 0;
   min-width: 480px;
   padding: 0;
+  width: 100%;
 }
 html {
   box-sizing: border-box;
