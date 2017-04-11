@@ -13,13 +13,6 @@
 }
 
 @font-face {
-    font-family: 'Rosewood';
-    font-style: normal;
-    font-weight: 400;
-    src: url(/fonts/Rosewood.otf);
-}
-
-@font-face {
     font-family: 'Victorian Parlor Vintage';
     font-style: normal;
     font-weight: 400;
@@ -82,16 +75,8 @@ nav {
   vertical-align: middle;
 }
 
-#title > h1 {
-  font-family: 'Victorian Parlor Vintage';
-  font-size: 3.8rem;
-  margin: 12px 0 0 0;
-}
-
-#title > h2 {
-  font-family: 'Rosewood';
-  font-size: 2.7rem;
-  margin: 8px 0 0 0;
+#title > img {
+  height: 128px;
 }
 
 nav > ul {
@@ -149,9 +134,8 @@ section > p {
   text-align: center;
 }
 
-#when > h1 {
-  font-family: 'Rosewood';
-  font-size: 2.4rem;
+#when > img {
+  height: 32px;
   margin-bottom: 64px;
 }
 
