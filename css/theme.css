@@ -131,7 +131,7 @@ section {
 section > h1 {
   text-align: center;
   font-family: 'Jesse James';
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 32px 0;
 }
 
@@ -177,6 +177,39 @@ section > p {
   background-size: cover;
   height: 320px;
   position: relative;
+}
+
+.bio {
+  display: inline-block;
+  width: calc(50% - 2px);
+}
+
+.bio > img {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+.bio > .bio-details {
+  display: inline-block;
+  padding: 0 32px;
+  vertical-align: top;
+  width: calc(100% - 216px);
+}
+
+.bio.bio-right > .bio-details {
+  text-align: right;
+}
+
+.bio > .bio-details > h2 {
+  font-family: 'Victorian Parlor Vintage';
+  font-size: 2.8rem;
+}
+
+.bio > .bio-details > p {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 @media only screen and (min-width: 720px) {
