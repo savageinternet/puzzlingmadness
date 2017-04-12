@@ -83,6 +83,7 @@ nav {
 
 #title > img {
   width: calc(100% - 16px);
+  margin-top:10px;
 }
 
 nav > ul {
