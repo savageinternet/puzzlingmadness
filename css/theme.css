@@ -232,6 +232,7 @@ footer > ul > li > ul > li > a {
    position: relative;
    width: 20%;
    padding-bottom: 20%;
+   margin: 10px;
 }
 .boxInner {
    position: absolute;
