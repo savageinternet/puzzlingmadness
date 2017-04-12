@@ -45,9 +45,10 @@ header {
 }
 
 #logo {
+  background-color: white;
   background-image: url('/img/biglogo.png');
-  background-position: -33px -13px;
-  background-size: 135%;
+  background-position: -17px -3px;
+  background-size: 121%;
   border: 5px solid #4f401c;
   border-radius: 88px;
   display: inline-block;
