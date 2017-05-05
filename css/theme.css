@@ -83,6 +83,7 @@ nav {
 
 #title > img {
   width: calc(100% - 16px);
+  margin-top:10px;
 }
 
 nav > ul {
@@ -129,6 +130,11 @@ section > p {
   font-family: 'Times New Roman', sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+section > p > a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 #when {
@@ -212,6 +218,77 @@ footer > ul > li > ul {
 footer > ul > li > ul > li {
   margin: 8px 0;
 }
+
+footer > ul > li > ul > li > a {
+  color: white;
+}
+
+/* The following is from dwuser.com for a reactive gallery */
+.wrap {
+   overflow: hidden;
+}
+.box {
+   float: left;
+   position: relative;
+   width: 20%;
+   padding-bottom: 20%;
+   margin: 10px;
+}
+.boxInner {
+   position: absolute;
+   overflow: hidden;
+}
+.boxInner img {
+   width: 100%;
+}
+.boxInner .titleBox {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: -50px;
+   background: #000;
+   background: rgba(0, 0, 0, 0.5);
+   color: #FFF;
+   padding: 10px;
+   text-align: center;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+   margin-bottom: 0;
+}
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+}
+/* End from website */
 
 @media only screen and (min-width: 720px) {
   #title > img {
