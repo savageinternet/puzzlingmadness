@@ -47,8 +47,7 @@ header {
 #logo {
   background-color: white;
   background-image: url('/img/biglogo.png');
-  background-position: -17px -3px;
-  background-size: 121%;
+  background-size: 100%;
   border: 5px solid #4f401c;
   border-radius: 88px;
   display: inline-block;
@@ -135,6 +134,9 @@ section > p {
 section > p > a {
   color: inherit;
   text-decoration: underline;
+  font-family: 'Kirsty', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 #when {
@@ -187,6 +189,28 @@ section > p > a {
 
 .bio > p {
   font-family: 'Times New Roman', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+section > ul > li {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+section > ul > li > a {
+  color: inherit;
+  text-decoration: underline;
+  font-family: 'Kirsty', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+section > ul > li > ul > li > a {
+  color: inherit;
+  text-decoration: underline;
+  font-family: 'Kirsty', sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
 }
