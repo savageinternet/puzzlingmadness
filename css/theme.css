@@ -125,6 +125,13 @@ section > h1 {
   margin: 32px 0;
 }
 
+section > h2 {
+  text-align: center;
+  font-family: 'Kirsty';
+  font-size: 1.6rem;
+  margin: 32px 0;
+}
+
 section > p {
   font-family: 'Times New Roman', sans-serif;
   font-size: 1.2rem;
@@ -142,7 +149,6 @@ section > p > a {
 #when {
   background-color: #4f401c;
   color: white;
-  height: 440px;
   text-align: center;
 }
 
@@ -321,7 +327,6 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   }
 
   #when {
-    height: 400px;
   }
 
   #cant_wait {
