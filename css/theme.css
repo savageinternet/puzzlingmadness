@@ -44,6 +44,10 @@ body {
   box-sizing: inherit;
 }
 
+a {
+  color: #4f401c;
+}
+
 header {
   background-color: #4f401c;
   color: white;
@@ -80,6 +84,11 @@ header {
   margin: 20px 0 20px 16px;
   padding: 8px 16px;
   text-decoration: none;
+  transition: all 0.23s ease-in-out 0s;
+}
+
+#book_now:hover {
+  background-color: #6384c2;
 }
 
 nav > ul {
@@ -109,6 +118,10 @@ nav > ul > li > a {
   cursor: pointer;
   text-decoration: none;
   margin: 0 12px;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: underline;
 }
 
 section > h1 {
@@ -146,6 +159,7 @@ section > p > a {
 
 #top {
   background-image: url('/img/img_header_optimized.jpg');
+  background-position: 0 80%;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -195,9 +209,10 @@ section > p > a {
 }
 
 #icons_bg > .icon-wrapper-bg {
+  background-size: cover;
   display: inline-block;
   height: 208px;
-  width: calc(33.33% - 2px);
+  width: calc(33.33% - 1px);
 }
 
 #icons_bg > .icon-wrapper-bg > .icon-wrapper {
@@ -235,12 +250,30 @@ section > p > a {
 }
 
 #when {
-  text-align: center;
 }
 
-#when > img {
-  height: 32px;
-  margin-bottom: 64px;
+#coming_soon_wrapper {
+  display: inline-block;
+  margin: 128px 0 64px 0;
+  vertical-align: top;
+  width: calc(100% - 320px);
+}
+
+#map_wrapper {
+  display: inline-block;
+  width: 312px;
+}
+
+#map_wrapper > p > span {
+  font-size: 1.4rem;
+}
+
+#map_wrapper > p {
+  font-size: 1.2rem;
+}
+
+#map_wrapper > a > img {
+  margin-bottom: 16px;
 }
 
 #coming_soon {
@@ -255,47 +288,10 @@ section > p > a {
   margin-top: 64px;
 }
 
-#cant_wait > a {
-  color: #4f401c;
-}
-
-.bio > img {
-  float: left;
-  width: 128px;
-  margin-right: 16px;
-}
-
-.bio > h2 {
-  font-family: 'Victorian Parlor Vintage';
-  font-size: 2.8rem;
-}
-
-.bio > p {
-  font-family: 'Times New Roman', sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-section > ul > li {
-  font-family: 'Times New Roman', sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-section > ul > li > a {
-  color: inherit;
-  text-decoration: underline;
-  font-family: 'Kirsty', sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-section > ul > li > ul > li > a {
-  color: inherit;
-  text-decoration: underline;
-  font-family: 'Kirsty', sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.5;
+#signup {
+  background-color: #4f401c;
+  color: white;
+  padding: 16px 0;
 }
 
 footer {
@@ -325,81 +321,10 @@ footer > ul > li > ul > li {
   margin: 8px 0;
 }
 
-footer > ul > li > ul > li > a {
-  color: #4f401c;
-}
-
 #copyright {
   font-family: 'Victorian Parlor Vintage';
   text-align: center;
 }
-
-/* The following is from dwuser.com for a reactive gallery */
-.wrap {
-   overflow: hidden;
-}
-.box {
-   float: left;
-   position: relative;
-   width: 20%;
-   padding-bottom: 20%;
-   margin: 10px;
-}
-.boxInner {
-   position: absolute;
-   overflow: hidden;
-}
-.boxInner img {
-   width: 100%;
-}
-.boxInner .titleBox {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   margin-bottom: -50px;
-   background: #000;
-   background: rgba(0, 0, 0, 0.5);
-   color: #FFF;
-   padding: 10px;
-   text-align: center;
-   -webkit-transition: all 0.3s ease-out;
-   -moz-transition: all 0.3s ease-out;
-   -o-transition: all 0.3s ease-out;
-   transition: all 0.3s ease-out;
-}
-body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
-   margin-bottom: 0;
-}
-@media only screen and (max-width : 480px) {
-   /* Smartphone view: 1 tile */
-   .box {
-      width: 100%;
-      padding-bottom: 100%;
-   }
-}
-@media only screen and (max-width : 650px) and (min-width : 481px) {
-   /* Tablet view: 2 tiles */
-   .box {
-      width: 50%;
-      padding-bottom: 50%;
-   }
-}
-@media only screen and (max-width : 1050px) and (min-width : 651px) {
-   /* Small desktop / ipad view: 3 tiles */
-   .box {
-      width: 33.3%;
-      padding-bottom: 33.3%;
-   }
-}
-@media only screen and (max-width : 1290px) and (min-width : 1051px) {
-   /* Medium desktop: 4 tiles */
-   .box {
-      width: 25%;
-      padding-bottom: 25%;
-   }
-}
-/* End from website */
 
 @media only screen and (min-width: 720px) {
   #title > img {
@@ -411,7 +336,9 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   }
 
   #cant_wait {
-    margin-left: 400px;
+    margin-left: 256px;
+    margin-top: 64px;
+    display: inline-block;
   }
 
   .bio {
