@@ -51,24 +51,19 @@ a {
 header {
   background-color: #4f401c;
   color: white;
-  height: 112px;
+  height: 80px;
   padding: 8px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
-#logo {
-  background-image: url('/img/biglogo.png');
-  background-size: 100%;
-  display: inline-block;
-  float: left;
-  height: 96px;
-  margin-right: 8px;
+#brand {
   vertical-align: top;
-  width: 96px;
 }
 
-#title {
-  display: inline-block;
-  vertical-align: top;
+#brand > a > img {
+  height: 64px;
 }
 
 #book_now {
@@ -81,7 +76,7 @@ header {
   font-size: 1.5rem;
   font-style: italic;
   font-weight: bold;
-  margin: 20px 0 20px 16px;
+  margin: 8px 0 8px 16px;
   padding: 8px 16px;
   text-decoration: none;
   transition: all 0.23s ease-in-out 0s;
@@ -94,7 +89,6 @@ header {
 nav > ul {
   float: right;
   list-style: none;
-  margin: 24px 0;
   padding: 0;
 }
 
@@ -163,12 +157,12 @@ section > p > a {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: 384px;
+  height: 464px;
 }
 
 #lead {
   font-size: 4rem;
-  line-height: 360px;
+  line-height: 464px;
   text-align: center;
 }
 
@@ -206,6 +200,10 @@ section > p > a {
   display: inline-block;
   padding: 0 16px;
   width: calc(25% - 2px);
+}
+
+#icons_bg {
+  background-color: #4f401c;
 }
 
 #icons_bg > .icon-wrapper-bg {
@@ -249,15 +247,26 @@ section > p > a {
   background-image: url('/img/img_save.jpg');
 }
 
-#when {
-}
-
 #coming_soon_wrapper {
   display: inline-block;
   margin: 128px 0 64px 0;
   vertical-align: top;
   width: calc(100% - 320px);
 }
+
+#coming_soon {
+  text-align: center;
+  font-family: 'Victorian Parlor Vintage';
+  font-size: 3.6rem;
+  margin: 32px 0;
+  transform: rotate(-15deg);
+}
+
+#cant_wait {
+  font-size: 1.5rem;
+  margin-top: 64px;
+}
+
 
 #map_wrapper {
   display: inline-block;
@@ -274,18 +283,6 @@ section > p > a {
 
 #map_wrapper > a > img {
   margin-bottom: 16px;
-}
-
-#coming_soon {
-  font-family: 'Victorian Parlor Vintage';
-  font-size: 3.6rem;
-  margin: 32px 0;
-  transform: rotate(-15deg);
-}
-
-#cant_wait {
-  font-size: 1.5rem;
-  margin-top: 64px;
 }
 
 #signup {
@@ -332,13 +329,9 @@ footer > ul > li > ul > li {
     width: auto;
   }
 
-  #when {
-  }
-
   #cant_wait {
-    margin-left: 256px;
-    margin-top: 64px;
-    display: inline-block;
+    margin-top: 80px;
+    text-align: center;
   }
 
   .bio {
