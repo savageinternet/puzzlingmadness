@@ -111,10 +111,6 @@ nav > ul > li > a {
   margin: 0 12px;
 }
 
-section {
-  padding: 32px;
-}
-
 section > h1 {
   text-align: center;
   font-family: 'Jesse James';
@@ -158,14 +154,84 @@ section > p > a {
 
 #lead {
   font-size: 4rem;
+  line-height: 360px;
   text-align: center;
-  margin-top: 80px;
 }
 
 #first_letter {
   font-size: 6rem;
   font-style: italic;
   font-weight: bold;
+}
+
+.icon-wrapper {
+  vertical-align: middle;
+}
+
+.icon-wrapper > img {
+  display: inline-block;
+  height: 64px;
+  margin-right: 24px;
+  vertical-align: middle;
+}
+
+.icon-wrapper > .icon-description {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: bold;
+  vertical-align: middle;
+  max-width: 192px;
+}
+
+#icons_nobg {
+  margin: 32px 0;
+}
+
+#icons_nobg > .icon-wrapper {
+  display: inline-block;
+  padding: 0 16px;
+  width: calc(25% - 2px);
+}
+
+#icons_bg > .icon-wrapper-bg {
+  display: inline-block;
+  height: 208px;
+  width: calc(33.33% - 2px);
+}
+
+#icons_bg > .icon-wrapper-bg > .icon-wrapper {
+  color: white;
+  height: 80px;
+  margin: 64px 0;
+  text-align: center;
+}
+
+#icons_bg > #icon_wrapper_bg_valkyrie > .icon-wrapper {
+  color: white;
+  height: 116px;
+  margin: 46px 0;
+  text-align: center;
+}
+
+#icons_bg > #icon_wrapper_bg_valkyrie > .icon-wrapper > img {
+  height: 100px;
+}
+
+#icons_bg > .icon-wrapper-bg > .icon-wrapper > .icon-description {
+  text-align: left;
+}
+
+#icon_wrapper_bg_map {
+  background-image: url('/img/img_explore.jpg');
+}
+
+#icon_wrapper_bg_valkyrie {
+  background-image: url('/img/img_torontonian.jpg');
+}
+
+#icon_wrapper_bg_evan {
+  background-image: url('/img/img_save.jpg');
 }
 
 #when {
