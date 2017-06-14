@@ -216,12 +216,12 @@ section > p > a {
 }
 
 #icons_nobg {
-  margin: 32px 0;
+  margin: 16px 0;
 }
 
 #icons_nobg > .icon-wrapper {
   display: inline-block;
-  padding: 0 16px;
+  padding: 16px;
   width: calc(50% - 2px);
 }
 
@@ -287,7 +287,7 @@ section > p > a {
 
 #cant_wait {
   font-size: 1.5rem;
-  margin-top: 64px;
+  margin-top: 96px;
   text-align: center;
 }
 
@@ -445,5 +445,10 @@ footer > ul > li > ul > li {
 
   #icons_bg > .icon-wrapper-bg {
     width: calc(33.33% - 1px);
+  }
+
+  #cant_wait {
+    font-size: 1.8rem;
+    margin-top: 128px;
   }
 }
