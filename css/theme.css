@@ -70,6 +70,11 @@ header {
   display: none;
 }
 
+/* remove when bookings are posted */
+#book_now {
+  display: none;
+}
+
 #book_now {
   background-color: #93b4e2;
   border: none;
