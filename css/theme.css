@@ -230,6 +230,7 @@ section > p > a {
 }
 
 #icons_bg > .icon-wrapper-bg {
+  background-position: 0% 50%;
   background-size: cover;
   display: inline-block;
   height: 208px;
@@ -450,5 +451,9 @@ footer > ul > li > ul > li {
   #cant_wait {
     font-size: 1.8rem;
     margin-top: 128px;
+  }
+
+  #icons_bg > .icon-wrapper-bg {
+    background-position: 0% 25%;
   }
 }
