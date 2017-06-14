@@ -66,10 +66,6 @@ header {
   height: 64px;
 }
 
-#brand_name {
-  display: none;
-}
-
 /* remove when bookings are posted */
 #book_now {
   display: none;
