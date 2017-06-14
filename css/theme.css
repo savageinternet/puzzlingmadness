@@ -274,10 +274,7 @@ section > p > a {
 }
 
 #coming_soon_wrapper {
-  display: inline-block;
   margin: 128px 0 64px 0;
-  vertical-align: top;
-  width: calc(100% - 320px);
 }
 
 #coming_soon {
@@ -295,8 +292,9 @@ section > p > a {
 }
 
 #map_wrapper {
-  display: inline-block;
-  width: 312px;
+  background-color: #d7b271;
+  padding: 16px;
+  text-align: right;
 }
 
 #map_wrapper > p > span {
@@ -304,17 +302,17 @@ section > p > a {
 }
 
 #map_wrapper > p {
+  display: inline-block;
   font-size: 1.2rem;
-}
-
-#map_wrapper > a > img {
-  margin-bottom: 16px;
+  padding-right: 16px;
+  text-align: right;
+  vertical-align: bottom;
 }
 
 #signup {
   background-color: #4f401c;
   color: white;
-  padding: 16px 0;
+  padding: 16px;
 }
 
 footer {
@@ -416,6 +414,28 @@ footer > ul > li > ul > li {
     display: inline-block;
     vertical-align: top;
     width: 33%;
+  }
+
+  #coming_soon_wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 320px);
+  }
+
+  #map_wrapper {
+    background-color: white;
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+    width: 312px;
+  }
+
+  #map_wrapper > p {
+    width: 100%;
+  }
+
+  #map_wrapper > a > img {
+    margin-bottom: 16px;
   }
 }
 @media only screen and (min-width: 1280px) {
