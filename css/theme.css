@@ -66,6 +66,10 @@ header {
   height: 64px;
 }
 
+#brand_name {
+  display: none;
+}
+
 #book_now {
   background-color: #93b4e2;
   border: none;
@@ -172,21 +176,21 @@ section > p > a {
 
 #top {
   background-image: url('/img/img_header_optimized.jpg');
-  background-position: 0 80%;
+  background-position: 60% 65%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200%;
   color: white;
   height: 464px;
 }
 
 #lead {
-  font-size: 4rem;
+  font-size: 1.8rem;
   line-height: 464px;
   text-align: center;
 }
 
 #first_letter {
-  font-size: 6rem;
+  font-size: 2.7rem;
   font-style: italic;
   font-weight: bold;
 }
@@ -343,8 +347,36 @@ footer > ul > li > ul > li {
 }
 
 @media only screen and (min-width: 720px) {
+  #brand_name {
+    display: inline-block;
+  }
+
+  #top {
+    background-position: 60% 80%;
+    background-size: 150%;
+  }
+
+  #lead {
+    font-size: 2.8rem;
+  }
+
+  #first_letter {
+    font-size: 4.2rem;
+  }
 }
 @media only screen and (min-width: 1024px) {
+  #top {
+    background-size: cover;
+  }
+
+  #lead {
+    font-size: 4rem;
+  }
+
+  #first_letter {
+    font-size: 6rem;
+  }
+
   #menu {
     margin-right: 0;
     text-align: left;
