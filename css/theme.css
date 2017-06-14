@@ -353,6 +353,14 @@ footer > ul > li > ul > li {
   text-align: center;
 }
 
+#bibliography {
+  font-size: 1.2rem;
+}
+
+#bibliography > ul {
+  line-height: 1.6;
+}
+
 @media only screen and (min-width: 720px) {
   #brand_name {
     display: inline-block;
