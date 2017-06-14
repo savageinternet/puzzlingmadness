@@ -86,35 +86,54 @@ header {
   background-color: #6384c2;
 }
 
-nav > ul {
+#menu {
   float: right;
   list-style: none;
   padding: 0;
+  margin-right: -8px;
+  text-align: right;
 }
 
-nav > ul > li {
+#menu::before {
+  color: white;
+  content: '\2261';
+  cursor: pointer;
+  font-size: 4rem;
+  line-height: 32px;
+  padding: 8px;
+}
+
+#menu:hover::before {
+  background-color: #4f401c;
+}
+
+#menu:hover > li {
+  background-color: #4f401c;
+  display: block;
+}
+
+#menu > li {
+  display: none;
   font-family: 'Jesse James';
   font-size: 1.4rem;
   padding: 8px 0;
   transition: background-color 200ms;
 }
 
-nav > ul > li:hover {
-  background-color: rgba(79, 64, 28, 0.25);
-}
-
-nav > ul > li:last-child {
+#menu > li:last-child {
   border-right: 0;
 }
 
-nav > ul > li > a {
+#menu > li > a {
   color: white;
   cursor: pointer;
+  display: inline-block;
   text-decoration: none;
   margin: 0 12px;
+  padding: 8px;
 }
 
-nav > ul > li > a:hover {
+#menu > li > a:hover {
   text-decoration: underline;
 }
 
@@ -324,52 +343,28 @@ footer > ul > li > ul > li {
 }
 
 @media only screen and (min-width: 720px) {
-  #title > img {
-    height: 96px;
-    width: auto;
-  }
-
-  #cant_wait {
-    margin-top: 80px;
-    text-align: center;
-  }
-
-  .bio {
-    display: inline-block;
-    vertical-align: top;
-    width: calc(50% - 2px);
-  }
-
-  .bio.bio-left {
-    padding-right: 32px;
-  }
-
-  .bio.bio-right {
-    padding-left: 16px;
-    text-align: right;
-  }
-
-  .bio.bio-right > img {
-    float: right;
-    margin-left: 16px;
-    margin-right: 0;
-  }
 }
 @media only screen and (min-width: 1024px) {
-  nav > ul {
-    float: right;
+  #menu {
+    margin-right: 0;
+    text-align: left;
   }
 
-  nav > ul > li {
+  #menu::before {
+    content: none;
+  }
+
+  #menu > li {
     border-right: 1px solid #4f401c;
     display: inline-block;
     font-family: 'Jesse James';
     font-size: 1.6rem;
+    padding: 0;
     transition: background-color 200ms;
   }
 
-  #coming_soon {
-    font-size: 4.4rem;
+  #menu:hover > li {
+    display: inline-block;
   }
 
   footer > ul > li {
@@ -379,16 +374,5 @@ footer > ul > li > ul > li {
   }
 }
 @media only screen and (min-width: 1280px) {
-  .bio > img {
-    display: inline-block;
-    vertical-align: top;
-    width: 200px;
-  }
 
-  .bio > .bio-details {
-    display: inline-block;
-    padding: 0 32px;
-    vertical-align: top;
-    width: calc(100% - 216px);
-  }
 }
