@@ -1,0 +1,10 @@
+{
+  "name": "canada-150-web",
+  "description": "Home page for The Puzzling Madness of John A. Macdonald",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "less": "^2.7.1",
+    "mustache": "^2.2.1"
+  }
+}
