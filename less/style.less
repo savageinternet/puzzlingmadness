@@ -284,8 +284,23 @@ section > p > a {
   text-align: center;
 }
 
-#coming_soon_wrapper {
-  margin: 32px 0 0 0;
+#video_wrapper {
+  margin: 32px 0;
+  text-align: center;
+}
+
+#iframe_wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+#iframe_wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 #previewday {
@@ -391,8 +406,19 @@ footer > ul > li > ul > li {
     max-width: 192px;
   }
 
+  #iframe_wrapper {
+    height: 405px;
+    margin: 0 auto;
+  	padding: 0;
+    position: static;
+    width: 720px;
+  }
+  #iframe_wrapper iframe {
+  	position: static;
+  }
+
   #coming_soon_wrapper {
-    margin: 64px 0 32px 0;
+    margin: 32px 0;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -440,7 +466,7 @@ footer > ul > li > ul > li {
     display: inline-block;
     vertical-align: top;
     width: ~"calc(100% - 320px)";
-    margin: 64px 0 32px 0;
+    margin: 32px 0;
   }
 
   #map_wrapper {
@@ -483,6 +509,6 @@ footer > ul > li > ul > li {
   }
 
   #coming_soon_wrapper {
-    margin: 64px -32px 32px -32px;
+    margin: 32px -32px;
   }
 }
